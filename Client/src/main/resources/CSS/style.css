@@ -1,0 +1,85 @@
+#mainBox {
+    -fx-background-image: url("../img/bg.jpeg");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-padding: 30;
+}
+
+#title {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-padding: 0 0 40 0;
+}
+#inputField{
+    -fx-border-color: rgba(255, 255, 255, 0.5);
+    -fx-border-width: 1px;
+    -fx-padding: 10px;
+}
+TextField , PasswordField{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill:  rgba(255, 255, 255, 0.7) ;
+    -fx-border-style: none;
+    -fx-font-size: 16px;
+    -fx-pref-width: 300px;
+}
+
+
+
+#checkbox {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+
+}
+
+#link {
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+#link:hover {
+    -fx-underline: true;
+}
+
+#loginButton {
+    -fx-background-color: white;
+    -fx-text-fill: #000000;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-padding: 12 0;
+    -fx-pref-width: 300px;
+    -fx-cursor: hand;
+}
+
+#loginButton:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+}
+
+#googleButton {
+    -fx-background-color: white;
+    -fx-text-fill: #000000;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-padding: 12 0;
+    -fx-pref-width: 300px;
+    -fx-cursor: hand;
+    -fx-alignment: center;
+}
+
+#googleButton:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+}
+
+#text {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+.invalid{
+    -fx-text-fill: #801d1d;
+}

@@ -1,0 +1,14 @@
+.back{
+    -fx-min-width: 25;
+    -fx-min-height: 18;
+    -fx-background-color:#ebdac4;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 0 10 10 0;
+    -fx-border-radius: 0 10 10 0;
+}
+.box{
+    -fx-background-color:#fff9f1 ;
+    -fx-min-width: 400;
+    -fx-min-height: 600;
+}
