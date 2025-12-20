@@ -98,11 +98,10 @@ public class DashBoard {
         btnSearch.setGraphic(imgSearchView);
         btnSearch.getStyleClass().add("search-button");
 
-
         btnSearch.setOnAction(e -> {
             try {
                 String s = searchField.getText();
-                if (s.contains("ال")) {
+                if (!s.matches("\\d+")) {
                     for (int i = 0; i < 114; i++) {
                         if (surahNamesSearch[i].equals(s)) {
                             ArrayList<Image> images = ServerClient.requestSurah(i + 1);
@@ -113,15 +112,16 @@ public class DashBoard {
 
                 }
                 int pageNumber = Integer.parseInt(searchField.getText());
-                ArrayList<Image> images = ServerClient.requestPage(pageNumber);
-                SurahViewer.show(stage, pageNumber, images);
+                if (pageNumber <= 604 && pageNumber >=1 ) {
+                    ArrayList<Image> images = ServerClient.requestPage(pageNumber);
+                    SurahViewer.show(stage, pageNumber, images);
+                }
 
 
             } catch (NumberFormatException ex) {
                 System.out.println("Enter valid page number");
             }
         });
-
         Image imghead = new Image(DashBoard.class.getResourceAsStream("/img/head (2).png"));
         ImageView imgheadView = new ImageView(imghead);
         imgheadView.setFitWidth(380);
